@@ -1,0 +1,25 @@
+.kiv {
+    background-color: antiquewhite;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+    
+}
+.kutyak {
+    flex: 0 0 calc(33.33% - 10px);
+    border: solid 1px black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    ul .kivalasztott {
+        display: flex;
+        flex-direction: column;
+    }
+}
